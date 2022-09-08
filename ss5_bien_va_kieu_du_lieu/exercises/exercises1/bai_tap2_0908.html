@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<h1>Amount</h1>
+<input type="text" id="yvlog">
+<br>
+<h1>From Currency</h1>
+<select id="select1" style="width: 100px">
+    <option value="a">VietNam</option>
+    <option value="b">USD</option>
+</select>
+<br>
+<h1>To Currency</h1>
+<select id="select2" style="width: 100px">
+    <option value="a">VietNam</option>
+    <option value="b">USD</option>
+</select>
+<button type="button" onclick="doi()"><strong style="background-color: aqua">Convert</strong></button>
+<p id="ketqua"></p>
+</body>
+</html>
+<script>
+    function doi() {
+     giaTriVao = document.getElementById("yvlog").value;
+     let giaVao1 = document.getElementById("select1").value
+     let giaVao2 = document.getElementById("select2").value
+        if (giaVao1 == giaVao2) {
+            document.getElementById("ketqua").innerHTML = "Vui Lòng Chọn Loại Tiền Cần Đổi"
+        } else if (giaVao1 == "b" && giaVao2 == "a") {
+            document.getElementById("ketqua").innerHTML = "số tiền của bạn là " + giaTriVao * 23000 + " VND"
+        } else if (giaVao1 == "a" && giaVao2 == "b") {
+            document.getElementById("ketqua").innerHTML = "số tiền của bạn là " + giaTriVao / 23000 + "$"
+        }
+    }
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<h1>Bài 1: Điểm Trung Bình</h1>
+<br>
+<br>
+<input type="text" id="vl" placeholder="Nhập điểm vật lý"><strong>Điểm Vật Lý</strong><br>
+<br>
+<input type="text" id="hh" placeholder="Nhập Điểm Hóa Học"><strong>Điểm Hóa Học</strong><br><br>
+<input type="text" id="sh" placeholder="Nhập Diểm Sinh Học"><strong>Điểm Sinh Học</strong><br>
+<button type="button" onclick="hhh()"> Điểm Trung Bình </button>
+<div id="dtb"></div>
+<br>
+<br>
+<h1>Bài 2: Độ C sang F</h1>
+<input type="text" id="dc">Độ C--
+<button type="button" onclick="ddd()">Đổi</button>
+<input type="text" id="df">Độ F
+<br>
+<h1>Diện Tích Tròn</h1>
+<input type="text" id="abc"> Bán kính
+<br>
+<button type="button" onclick="aaa()">  Diện Tích</button>
+<div id="dientich"></div>
+
+</body>
+</html>
+<script>
+    function hhh() {
+        let diemvatly = document.getElementById('vl').value;
+        let diemhoahoc = document.getElementById('hh').value;
+        let diemsinhhoc = document.getElementById('sh').value;
+        let dieemtrungbinh = (parseFloat(diemvatly)+parseFloat(diemhoahoc)+parseFloat(diemsinhhoc))/3;
+        document.getElementById('dtb').innerHTML =dieemtrungbinh;
+    }
+    function ddd() {
+        let doC =document.getElementById("dc").value
+        let doF = 9/5 * parseFloat(doC) + 32;
+        document.getElementById('df').value = doF;
+a
+
+
+            }
+     function aaa() {
+        let bankinh = document.getElementById('abc').value;
+         let dientich=parseFloat(bankinh)*3.14;
+         document.getElementById('dientich').innerHTML=("diện tích là:")+dientich;
+     }
+</script>
+
+

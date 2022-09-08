@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="dauvao1">    <input type="text" id="dauvao2">
+<br>
+<br>
+<button type="button" onclick="add()" id="999">Addition(+)</button>
+<button type="button" onclick="sub()" id="888">Subtraction(-)</button>
+<button type="button" onclick="multip()" id="777">Multiplication(X)</button>
+<button type="button" onclick="di()" id="666">Division(/)</button>
+<br>
+<br>
+<h1>Result Division :</h1>
+<div id="que"></div>
+
+
+</body>
+</html>
+<script>
+    function add() {
+        let dauvao1 = document.getElementById("dauvao1").value
+        let dauvao2 = document.getElementById("dauvao2").value
+        let giatri = parseFloat(dauvao1) + parseFloat(dauvao2)
+        document.getElementById("que").innerText = giatri
+    }
+    function sub() {
+        alert(document.getElementById("888").value);
+        let dauvao1 = document.getElementById("dauvao1").value
+        let dauvao2 = document.getElementById("dauvao2").value
+        let giatri = dauvao1 * 
+    }
+    function multip() {
+        alert(document.getElementById("777").value);
+
+    }
+    function di() {
+        alert(document.getElementById("666").value);
+
+    }
+
+</script>

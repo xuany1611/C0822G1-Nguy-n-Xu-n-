@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Amount</h1>
-<input type="text" id="yvlog">
+<input type="text" id="baitap">
 <br>
 <h1>From Currency</h1>
 <select id="select1" style="width: 100px">
@@ -25,9 +25,9 @@
 </html>
 <script>
     function doi() {
-     giaTriVao = document.getElementById("yvlog").value;
-     let giaVao1 = document.getElementById("select1").value
-     let giaVao2 = document.getElementById("select2").value
+     let giaTriVao = document.getElementById("baitap").value;
+     let giaVao1 = document.getElementById("select1").value;
+     let giaVao2 = document.getElementById("select2").value;
         if (giaVao1 == giaVao2) {
             document.getElementById("ketqua").innerHTML = "Vui Lòng Chọn Loại Tiền Cần Đổi"
         } else if (giaVao1 == "b" && giaVao2 == "a") {

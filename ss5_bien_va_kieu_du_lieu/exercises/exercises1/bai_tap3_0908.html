@@ -9,43 +9,43 @@
 <input type="text" id="dauvao1">    <input type="text" id="dauvao2">
 <br>
 <br>
-<button type="button" onclick="add()" id="999">Addition(+)</button>
-<button type="button" onclick="sub()" id="888">Subtraction(-)</button>
-<button type="button" onclick="multip()" id="777">Multiplication(X)</button>
-<button type="button" onclick="di()" id="666">Division(/)</button>
+<button type="button" onclick="cong()" id="999">Addition(+)</button>
+<button type="button" onclick="tru()" id="888">Subtraction(-)</button>
+<button type="button" onclick="nhan()" id="777">Multiplication(X)</button>
+<button type="button" onclick="chia()" id="666">Division(/)</button>
 <br>
 <br>
 <h1>Result Division :</h1>
-<div id="que"></div>
+<div id="baitap"></div>
 
 
 </body>
 </html>
 <script>
-    function add() {
-        let dauvao1 = document.getElementById("dauvao1").value
+    function cong() {
+        let dauVao1 = document.getElementById("dauvao1").value
         let dauvao2 = document.getElementById("dauvao2").value
-        let giatri = parseFloat(dauvao1) + parseFloat(dauvao2)
-        document.getElementById("que").innerText = giatri
+        let giatri = parseFloat(dauVao1) + parseFloat(dauvao2);
+        document.getElementById("baitap").innerText = giatri
     }
-    function sub() {
-        let dauvao1 = document.getElementById("dauvao1").value
-        let dauvao2 = document.getElementById("dauvao2").value
-        let giatri = dauvao1 * dauvao2
-        document.getElementById("que").innerText = giatri
-    }
-    function multip() {
-        let dauvao1 = document.getElementById("dauvao1").value
-        let dauvao2 = document.getElementById("dauvao2").value
-        let giatri = dauvao1 / dauvao2
-        document.getElementById("que").innerText = giatri
-    }
-    function di() {
-        //alert(document.getElementById("666").value);
+    function tru() {
         let dauvao1 = document.getElementById("dauvao1").value
         let dauvao2 = document.getElementById("dauvao2").value
         let giatri = dauvao1 - dauvao2
-        document.getElementById("que").innerText = giatri
+        document.getElementById("baitap").innerText = giatri
+    }
+    function nhan() {
+        let dauvao1 = document.getElementById("dauvao1").value
+        let dauvao2 = document.getElementById("dauvao2").value
+        let giatri = dauvao1 * dauvao2
+        document.getElementById("baitap").innerText = giatri
+    }
+    function chia() {
+        //alert(document.getElementById("666").value);
+        let dauvao1 = document.getElementById("dauvao1").value
+        let dauvao2 = document.getElementById("dauvao2").value
+        let giatri = dauvao1 / dauvao2
+        document.getElementById("baitap").innerText = giatri
 
     }
 

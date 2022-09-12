@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<input type="text" id="soa" placeholder="nhập số a">
+<input type="text" id="sob" placeholder="nhập số b">
+<button type="button" onclick="tinh()">kik me!</button>
+<p id="kiemtra"></p>
+</body>
+</html>
+<script>
+    function tinh() {
+        let a = +document.getElementById("soa").value;
+        let b = +document.getElementById("sob").value;
+
+        if (a % b == 0){
+            document.getElementById("kiemtra").innerHTML = " a chia hết cho b";
+        }else {
+            document.getElementById("kiemtra").innerHTML = "a không chia hết cho b";
+        }
+    }
+</script>

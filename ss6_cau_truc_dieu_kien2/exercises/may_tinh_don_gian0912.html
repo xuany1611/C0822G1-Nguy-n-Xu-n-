@@ -2,106 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Máy tính đơn giản</title>
+    <title>Máy tính</title>
 </head>
 <body>
 <table >
     <tr>
-        <td colspan="4"><input type="text" id="tinh"></td>
+        <td colspan="4"><input type="text" disabled id="windown"> </td>
     </tr>
     <tr>
-        <td><input type="button" onclick="nhap(1)" value="1"></td>
-        <td><input type="button" onclick="nhap(2)" value="2"></td>
-        <td><input type="button" onclick="nhap(3)" value="3"></td>
-        <td><input type="button" onclick="cong()" value="+"></td>
+        <td><button type="button" id="somot" value="1"  onclick="mot()">1</button></td>
+        <td><button type="button" id="sohai" onclick="hai()">2</button></td>
+        <td><button type="button" id="soba" onclick="ba()">3</button></td>
+        <td><button type="button" id="daucong" onclick="cong()">+</button></td>
+    </tr>
+
+    <tr>
+        <td><button type="button" id="sobon" onclick="bon()">4</button></td>
+        <td><button type="button" id="sonam" onclick="nam()">5</button></td>
+        <td><button type="button" id="sosau" onclick="sau()">6</button></td>
+        <td><button type="button" id="dautru"  onclick="tru()">-</button></td>
     </tr>
     <tr>
-        <td><input type="button" onclick="nhap(4)" value="4"></td>
-        <td><input type="button" onclick="nhap(5)" value="5"></td>
-        <td><input type="button" onclick="nhap(6)" value="6"></td>
-        <td><input type="button" onclick="tru()" value="-"></td>
+        <td><button type="button" id="sobay" onclick="bay()">7</button></td>
+        <td><button type="button" id="sotam" onclick="tam()">8</button></td>
+        <td><button type="button" id="sochin" onclick="chin()">9</button></td>
+        <td><button type="button" id="daunhan" onclick="nhan()">x</button></td>
     </tr>
     <tr>
-        <td><input type="button" onclick="nhap7" value="7"></td>
-        <td><input type="button" onclick="nhap8" value="8"></td>
-        <td><input type="button" onclick="nhap9" value="9"></td>
-        <td><input type="button" onclick="nhan()" value="*"></td>
-    </tr>
-    <tr>
-        <td><input type="button" onclick="xoa()" value="xoa"></td>
-        <td><input type="button" onclick="nhap0()" value="0"></td>
-        <td><input type="button" onclick="bang()" value="="></td>
-        <td><input type="button" onclick="chia" value="/"></td>
+        <td><button type="button" id="chuC" onclick="C">C</button></td>
+        <td><button type="button" id="sokhong" onclick="khong()">0</button></td>
+        <td><button type="button" id="daubang" onclick="bang()">=</button></td>
+        <td><button type="button" id="dauchia" onclick="dauchia()">/</button></td>
     </tr>
 </table>
-
 </body>
 </html>
 <script>
-    function nhap(1) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "1";
+    function mot() {
+        let result = document.getElementById('somot').value;
+        console.log(result)
+        document.getElementById('windown').value = parseInt(result) + 1;
     }
-    function nhap(2) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "2";
+    function hai() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '2';
     }
-    function nhap(3) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "3";
+    function ba() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '3';
     }
     function cong() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "+";
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '+';
     }
-    function nhap(4) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "4";
+    function bon() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '4';
     }
-    function nhap(5) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "5";
+    function nam() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '5';
     }
-    function nhap(6) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "6";
+    function sau() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '6';
     }
     function tru() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "-";
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '-';
+    }function bay() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '7';
     }
-    function nhap(7) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "7";
+    function tam() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '8';
     }
-    function nhap(8) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "8";
-    }
-    function nhap(9) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "9";
+    function chin() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '9';
     }
     function nhan() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "*";
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '*';
     }
-    function xoa() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "detele";
+    function C() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '   ';
     }
-    function nhap(0) {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "0";
+    function khong() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '0';
     }
     function bang() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "=";
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = eval(result);
     }
-    function chia() {
-        let result = document.getElementById("tinh").value;
-        document.getElementById("tinh").value = result + "/";
+    function dauchia() {
+        let result = document.getElementById('windown').value;
+        document.getElementById('windown').value = result + '/';
     }
-
-
 </script>

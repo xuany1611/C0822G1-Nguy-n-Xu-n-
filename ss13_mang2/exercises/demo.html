@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập 1 mảng gồm 10 phần tủ từ bàn phím in ra các chữ số chẵn</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let mang1=[];
+    let mang=[];
+    for (let i = 0; i <10 ; i++) {
+        mang[i]=prompt("nhập vào ");
+    }
+    document.write(mang);
+    for (let j = 0; j <mang.length ; j++) {
+        if (mang[j]%2===0){
+            mang1.push(mang[j]);
+        }
+    }
+    document.write(mang1)
+</script>

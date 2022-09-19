@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    function tenHam(number) {
+        let result = "";
+        if (number) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = tenHam(confirmAnswer);
+    alert(theAnswer);
+
+</script>

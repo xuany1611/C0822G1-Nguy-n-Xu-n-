@@ -9,22 +9,20 @@
 </body>
 </html>
 <script>
-
-    let dem=0
-    let number=0
-    for (let i=2;i<=1000;i++){
- if (number<20){
-     for (let j=1;j<=i;j++){
-         if (i%j==0){
-             dem++;}
-     }
-     if (dem==2){
-         document.write(i+"<br>");
-         number++;}
-       dem=0;
-
- }
-
-
+    let dem = 0
+    let number = 0
+    for (let i = 2; i <= 1000; i++) {
+        if (number < 20) {
+            for (let j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    dem++;
+                }
+            }
+            if (dem == 2) {
+                document.write(i + "<br>");
+                number++;
+            }
+            dem = 0;
+        }
     }
 </script>

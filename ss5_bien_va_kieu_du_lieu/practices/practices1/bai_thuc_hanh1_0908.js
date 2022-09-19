@@ -1,7 +1,7 @@
 var i =10;
 var f =20.5;
 var b =true;
-var s m Hà Nội;
+var s ;
 
 document.write('i = ' + i)
 document.write('<br/>')

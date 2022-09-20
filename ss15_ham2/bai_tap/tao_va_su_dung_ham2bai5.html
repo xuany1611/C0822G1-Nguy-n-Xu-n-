@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let so1 = prompt("nhập vào một số");
+    let so2 = prompt("nhập vào số 2");
+    let so3 = prompt("nhập vào số 3");
+
+    function nhapSoNguyen() {
+        if (so1 < so2 && so1 < so3) {
+            alert("số 1 là số thấp nhất");
+        } else if (so2 < so1 && so2 < so3) {
+            alert("số 2 là số thấp nhất");
+        } else {
+            alert("số 3 là số thấp nhất");
+        }
+    }
+
+    alert(nhapSoNguyen())
+
+</script>

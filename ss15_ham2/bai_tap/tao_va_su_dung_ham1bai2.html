@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+        hiển thị hộp thoại thông báo cho người dùng.
+        Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</title>
+</head>
+<body>
+<input type="button" value="Tính" onclick="alertMessage()"/>;
+</body>
+</html>
+<script>
+    function alertMessage() {
+        let soa = +prompt("nhập vào số a");
+        let sob = +prompt("nhập vào số b");
+        if (soa > sob) {
+            alert("số thứ nhất lớn hơn số thứ hai");
+        } else {
+            let tong = soa + sob;
+            document.write( "tổng "+tong );
+        }
+    }
+</script>

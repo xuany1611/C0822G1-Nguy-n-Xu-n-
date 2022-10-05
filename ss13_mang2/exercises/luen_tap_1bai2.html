@@ -11,18 +11,18 @@
 </html>
 <script>
     let vitri;
-let max= 0;
-let nhap=[];
-    for (let i=0;i<10;i++){
-        nhap[i]=prompt("nhập vào một số ");
+    let max = 0;
+    let nhap = [];
+    for (let i = 0; i < 10; i++) {
+        nhap[i] = prompt("nhập vào một số ");
     }
     document.write(nhap);
-    for (let j=0;j<10;j++){
-        if (max<nhap[j]){
-            max=nhap[j];
-            vitri=j;
+    for (let j = 0; j < 10; j++) {
+        if (max < nhap[j]) {
+            max = nhap[j];
+            vitri = j;
         }
     }
-    document.write("số cao nhất"+max+"<br>")
-document.write("vị trí"+vitri)
+    document.write("số cao nhất" + max + "<br>")
+    document.write("vị trí" + vitri)
 </script>

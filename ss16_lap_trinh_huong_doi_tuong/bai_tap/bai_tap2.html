@@ -8,3 +8,25 @@
 
 </body>
 </html>
+<script>
+    class Temperature{
+        constructor(doC,doF,KenVin) {
+            this.doC=doC;
+            this.doF=doF;
+            this.KenVin=KenVin;
+        }
+        getdoF(){
+            return this.doC * 1/9 +32;
+        }
+        getKenVin(){
+            return this.doF + 273.15;
+        }
+    }
+    let chuyenDoi = new Temperature(25);
+    let doF = chuyenDoi.getdoF();
+    let doKenvin = chuyenDoi.getKenVin();
+    document.write("độ f:"+ doF);
+    document.write("<br>");
+    document.write("độ kenvin:" + doKenvin);
+
+</script>

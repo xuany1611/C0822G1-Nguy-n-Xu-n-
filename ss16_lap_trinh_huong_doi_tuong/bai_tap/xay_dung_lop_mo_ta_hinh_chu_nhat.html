@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<canvas id="demoCanvas" width="500" height="600"></canvas>
+<canvas id="Canvas" width="500" height="600"></canvas>
 <script>
     class Rectangle {
         constructor(width, length) {
@@ -22,7 +22,7 @@
         }
 
         display(x, y) {
-            let canvas = document.getElementById("demoCanvas");
+            let canvas = document.getElementById("Canvas");
             let ctx = canvas.getContext("2d");
             ctx.fillStyle = "#FF0000";
             ctx.fillRect(x, y, this.length, this.width);
